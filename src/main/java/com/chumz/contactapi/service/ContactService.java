@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -22,7 +21,6 @@ import java.util.function.Function;
 
 import static com.chumz.contactapi.constant.Constant.PHOTO_DIRECTORY;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 @Service
 @Slf4j
