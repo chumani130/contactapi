@@ -29,7 +29,7 @@ public class ContactResource {
     }
 
     @GetMapping
-    public ResponseEntity<Page<Contact>> getContact(@RequestParam(value = "page", defaultValue = "0") int page,
+    public ResponseEntity<Page<Contact>> getContacts(@RequestParam(value = "page", defaultValue = "0") int page,
                                                     @RequestParam(value = "size", defaultValue = "10") int size) {
         return ResponseEntity.ok().body(contactService.getAllContacts(page, size));
     }
